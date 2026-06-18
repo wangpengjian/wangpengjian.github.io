@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="王鹏鉴 - Frontend engineer portfolio focused on React, TypeScript, engineering tooling, and practical AI products."
+      content="王鹏鉴 - 专注 React、TypeScript、前端工程化和 AI 产品落地的前端工程师。"
     />
-    <title>王鹏鉴 | Frontend Engineer</title>
+    <title>王鹏鉴 | 前端工程师</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,130 +22,124 @@
         <span class="brand-mark">W</span>
         <span>王鹏鉴</span>
       </a>
-      <nav aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-actions">
+        <nav aria-label="Primary navigation">
+          <a href="#projects" data-i18n="nav.projects">项目</a>
+          <a href="#skills" data-i18n="nav.skills">能力</a>
+          <a href="#contact" data-i18n="nav.contact">联系</a>
+        </nav>
+        <div class="language-toggle" aria-label="Language switcher">
+          <button class="active" type="button" data-lang="zh">中</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Frontend Engineer · AI Product Builder</p>
-          <h1>Building polished web products with React, TypeScript, and practical AI workflows.</h1>
-          <p class="hero-text">
-            I focus on reusable frontend systems, developer tooling, and full-stack AI applications
-            that turn technical data into clear product experiences.
-          </p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">前端工程师 · AI 产品构建者</p>
+          <h1 data-i18n="hero.title">用 React、TypeScript 和 AI 工作流打造更精致的 Web 产品。</h1>
+          <p class="hero-text" data-i18n="hero.text">我关注可复用前端系统、开发者工具和全栈 AI 应用，把复杂的技术信息转化为清晰、可使用的产品体验。</p>
           <div class="hero-actions">
-            <a class="primary-action" href="https://github.com/wangpengjian/repopolish-ai">View AI Project</a>
-            <a class="secondary-action" href="https://github.com/wangpengjian">GitHub Profile</a>
+            <a class="primary-action" href="https://github.com/wangpengjian/repopolish-ai" data-i18n="hero.primaryAction">查看 AI 项目</a>
+            <a class="secondary-action" href="https://github.com/wangpengjian" data-i18n="hero.secondaryAction">GitHub 主页</a>
           </div>
         </div>
         <aside class="hero-panel" aria-label="Profile highlights">
           <div class="metric">
             <strong>React</strong>
-            <span>Reusable UI and hooks architecture</span>
+            <span data-i18n="hero.metricReact">可复用 UI 与 Hooks 架构</span>
           </div>
           <div class="metric">
             <strong>TypeScript</strong>
-            <span>Typed frontend libraries and tooling</span>
+            <span data-i18n="hero.metricTs">类型安全的前端库和工程工具</span>
           </div>
           <div class="metric">
             <strong>AI</strong>
-            <span>OpenAI and GitHub API product flows</span>
+            <span data-i18n="hero.metricAi">OpenAI 与 GitHub API 产品流程</span>
           </div>
         </aside>
       </section>
 
       <section class="section" id="projects">
         <div class="section-heading">
-          <p class="eyebrow">Selected Work</p>
-          <h2>Interview-ready projects</h2>
+          <p class="eyebrow" data-i18n="projects.eyebrow">精选项目</p>
+          <h2 data-i18n="projects.title">适合面试展示的项目</h2>
         </div>
 
         <div class="project-grid">
           <article class="project-card featured">
             <div>
-              <p class="project-type">AI Full-Stack App</p>
+              <p class="project-type" data-i18n="projects.repoPolish.type">AI 全栈应用</p>
               <h3>RepoPolish AI</h3>
-              <p>
-                An AI-powered GitHub portfolio and README curator that analyzes repositories,
-                extracts presentation gaps, and generates recruiter-friendly project copy.
-              </p>
+              <p data-i18n="projects.repoPolish.desc">一个 AI 驱动的 GitHub 作品集与 README 优化工具，可以分析仓库、识别展示短板，并生成更适合招聘和面试场景的项目文案。</p>
             </div>
             <ul>
-              <li>React + Vite frontend</li>
-              <li>Node.js + Express API</li>
-              <li>GitHub REST API and optional OpenAI generation</li>
-              <li>Deterministic demo fallback for reviewer-friendly demos</li>
+              <li data-i18n="projects.repoPolish.point1">React + Vite 前端</li>
+              <li data-i18n="projects.repoPolish.point2">Node.js + Express API</li>
+              <li data-i18n="projects.repoPolish.point3">GitHub REST API 与可选 OpenAI 生成</li>
+              <li data-i18n="projects.repoPolish.point4">内置演示数据，方便评审直接体验</li>
             </ul>
-            <a href="https://github.com/wangpengjian/repopolish-ai">Open repository</a>
+            <a href="https://github.com/wangpengjian/repopolish-ai" data-i18n="projects.openRepo">查看仓库</a>
           </article>
 
           <article class="project-card">
             <div>
-              <p class="project-type">Frontend Engineering</p>
+              <p class="project-type" data-i18n="projects.myHooks.type">前端工程化</p>
               <h3>my-hooks</h3>
-              <p>
-                A TypeScript React Hooks library for reusable business logic, with documentation,
-                demos, tests, and a frontend engineering workflow.
-              </p>
+              <p data-i18n="projects.myHooks.desc">一个 TypeScript React Hooks 业务库，覆盖可复用业务逻辑、文档、演示、测试和前端工程化流程。</p>
             </div>
             <ul>
-              <li>pnpm workspace</li>
-              <li>dumi documentation</li>
-              <li>Jest test setup</li>
-              <li>webpack and gulp build workflow</li>
+              <li data-i18n="projects.myHooks.point1">pnpm workspace</li>
+              <li data-i18n="projects.myHooks.point2">dumi 文档与示例</li>
+              <li data-i18n="projects.myHooks.point3">Jest 测试配置</li>
+              <li data-i18n="projects.myHooks.point4">webpack 与 gulp 构建流程</li>
             </ul>
-            <a href="https://github.com/wangpengjian/my-hooks">Open repository</a>
+            <a href="https://github.com/wangpengjian/my-hooks" data-i18n="projects.openRepo">查看仓库</a>
           </article>
 
           <article class="project-card">
             <div>
-              <p class="project-type">Portfolio System</p>
-              <h3>Personal Site</h3>
-              <p>
-                A focused GitHub Pages portfolio that presents project strengths, technical stack,
-                and interview-ready engineering narratives.
-              </p>
+              <p class="project-type" data-i18n="projects.site.type">作品集系统</p>
+              <h3 data-i18n="projects.site.name">个人站点</h3>
+              <p data-i18n="projects.site.desc">一个聚焦项目亮点、技术栈和面试叙事的 GitHub Pages 作品集入口。</p>
             </div>
             <ul>
-              <li>Static GitHub Pages deployment</li>
-              <li>Responsive layout</li>
-              <li>Project-first information architecture</li>
+              <li data-i18n="projects.site.point1">GitHub Pages 静态部署</li>
+              <li data-i18n="projects.site.point2">响应式布局</li>
+              <li data-i18n="projects.site.point3">项目优先的信息架构</li>
             </ul>
-            <a href="https://github.com/wangpengjian/wangpengjian.github.io">Open repository</a>
+            <a href="https://github.com/wangpengjian/wangpengjian.github.io" data-i18n="projects.openRepo">查看仓库</a>
           </article>
         </div>
       </section>
 
       <section class="section split-section" id="skills">
         <div>
-          <p class="eyebrow">Capabilities</p>
-          <h2>What I bring to frontend teams</h2>
+          <p class="eyebrow" data-i18n="skills.eyebrow">核心能力</p>
+          <h2 data-i18n="skills.title">我能为前端团队带来的价值</h2>
         </div>
         <div class="skill-list">
           <div class="skill-item">
-            <h3>Frontend Architecture</h3>
-            <p>React, TypeScript, reusable hooks, component boundaries, and maintainable UI systems.</p>
+            <h3 data-i18n="skills.arch.title">前端架构</h3>
+            <p data-i18n="skills.arch.desc">React、TypeScript、可复用 Hooks、组件边界和可维护 UI 系统。</p>
           </div>
           <div class="skill-item">
-            <h3>Engineering Workflow</h3>
-            <p>Testing, linting, documentation, build pipelines, and package-oriented frontend workflows.</p>
+            <h3 data-i18n="skills.workflow.title">工程化流程</h3>
+            <p data-i18n="skills.workflow.desc">测试、Lint、文档、构建链路和面向包的前端研发流程。</p>
           </div>
           <div class="skill-item">
-            <h3>AI Product Integration</h3>
-            <p>Practical OpenAI and GitHub API integrations that support real user workflows.</p>
+            <h3 data-i18n="skills.ai.title">AI 产品集成</h3>
+            <p data-i18n="skills.ai.desc">结合 OpenAI 与 GitHub API，把 AI 能力落到真实用户流程中。</p>
           </div>
         </div>
       </section>
 
       <section class="contact-band" id="contact">
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s build something useful.</h2>
+          <p class="eyebrow" data-i18n="contact.eyebrow">联系</p>
+          <h2 data-i18n="contact.title">一起做点真正有用的东西。</h2>
         </div>
         <div class="contact-actions">
           <a href="https://github.com/wangpengjian">GitHub</a>
@@ -153,5 +147,6 @@
         </div>
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

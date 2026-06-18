@@ -40,8 +40,10 @@ a {
 
 .brand,
 nav,
+.header-actions,
 .hero-actions,
-.contact-actions {
+.contact-actions,
+.language-toggle {
   display: flex;
   align-items: center;
 }
@@ -71,6 +73,36 @@ nav a {
   font-size: 14px;
   font-weight: 760;
   text-decoration: none;
+}
+
+.header-actions {
+  gap: 18px;
+}
+
+.language-toggle {
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid rgba(21, 32, 30, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.language-toggle button {
+  min-width: 38px;
+  height: 32px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #52615c;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.language-toggle button.active {
+  background: #183f36;
+  color: #ffffff;
 }
 
 .hero {
@@ -345,9 +377,17 @@ h3 {
   }
 
   nav {
-    width: 100%;
-    justify-content: space-between;
     gap: 12px;
+  }
+
+  .header-actions {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .language-toggle {
+    width: fit-content;
   }
 
   h1 {
